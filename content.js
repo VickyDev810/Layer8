@@ -168,9 +168,6 @@ function initializeExtension() {
     }
   }
   
-  // Keep the rest of your code as is, but remove or comment out the keydown event handler
-  // since we're replacing it with the button approach
-  
   // Create a Mutation Observer
   const observer = new MutationObserver((mutationsList, observer) => {
     setupPromptListener();
