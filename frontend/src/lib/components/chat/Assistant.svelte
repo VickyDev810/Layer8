@@ -11,11 +11,11 @@
       report: string;
     } | null = null;
   
-    const API_URL = 'http://localhost:8000';
+    const API_URL = 'http://35.174.105.188:8000';
     const DEFAULT_PROVIDER = 'gemini';
     const DEFAULT_MODEL = 'gemini-2.0-flash';
     const DEFAULT_TEMPERATURE = 0.7;
-    const DEFAULT_MAX_TOKENS = 1000;
+    const DEFAULT_MAX_TOKENS = 2000;
   
     onMount(() => {
       messages = [
@@ -83,7 +83,7 @@
   </script>
   
   <!-- Improved UI -->
-  <div class="max-w-4xl mx-auto bg-slate-900 rounded-xl shadow-2xl overflow-hidden">
+  <div class="  rounded-xl shadow-md overflow-hidden">
     <header class="px-6 py-4 bg-slate-800 border-b border-slate-700">
       <h2 class="text-3xl font-bold text-blue-500">Layer8 Assistant</h2>
       <p class="text-sm text-slate-400">
@@ -92,7 +92,7 @@
     </header>
   
     <!-- Chat Messages Container -->
-    <div class="h-[500px] overflow-y-auto p-6 space-y-4">
+    <div class=" h-[800px] overflow-y-auto p-6 space-y-4">
       {#each messages as message}
         <div class="chat-message {message.role === 'user' ? 'flex justify-end' : ''}">
           <div class="{message.role === 'user' 
@@ -166,7 +166,6 @@
       </footer>
     </div>
   </div>
-  
   <style>
     .animation-delay-200 {
       animation-delay: 0.2s;

@@ -1,8 +1,8 @@
 <script lang="ts"></script>
 
 <nav class="w-full flex justify-between items-center px-10 py-5 bg-transparent text-white">
-  <div class="w-34 font-bold tracking-wide">
-    <img src="/images/layer8.png" alt="Logo" />
+  <div class="w-20 font-bold tracking-wide">
+    <img src="src/assets/images/layer8.png" alt="Logo" />
   </div>
   <div class="space-x-6 text-sm">
     <a href="#" class="hover:text-blue-400">Home</a>
